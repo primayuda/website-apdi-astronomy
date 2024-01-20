@@ -3,11 +3,15 @@ const member = Astro.props;
 console.log(member);
 ---
 <div class="flex flex-col justify-center w-full px-8 mx-6 my-12 text-center bg-slate-200 rounded-md md:w-96 lg:w-80 xl:w-64 dark:bg-gray-100 dark:text-gray-800">
-  <img alt={member.photo.alt} class="self-center flex-shrink-0 w-24 h-24 -mt-12 bg-center bg-cover hover:scale-105 rounded-full dark:bg-gray-500" src={member.photo.url}>
+  
+  <img alt={member.data.photo.alt} class="self-center flex-shrink-0 w-24 h-24 -mt-12 bg-center bg-cover hover:scale-110 rounded-full dark:bg-gray-500" src={member.data.photo.url}>
   <div class="flex-1 my-4">
-    <p class="text-xl font-semibold leading">{member.name}</p>
-    <p>{member.title}</p>
+    <a href=`/members/${member.slug}`>
+      <p class="text-xl font-semibold leading hover:underline">{member.data.name}</p>
+    </a>
+    <p>{member.data.title}</p>
   </div>
+  
   <div class="flex items-center justify-center p-3 space-x-3 border-t-2 border-slate-400">
     <a rel="noopener noreferrer" href="#" title="Email" class="hover:text-blue-400 dark:text-gray-900 hover:dark:text-blue-400">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-5 h-5">

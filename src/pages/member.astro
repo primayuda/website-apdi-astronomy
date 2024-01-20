@@ -1,26 +1,10 @@
 ---
 import MainLayout from "@/layouts/main-layout.astro";
 import MemberCard from "@/components/cards/member-card.astro"
+import { getCollection } from "astro:content";
 
-const members = [
-  {
-    name: "Leroy Jenkins",
-    title: "Visual Designer",
-    photo: {
-      url: "https://source.unsplash.com/random/100x100/?portrait?0",
-      alt: "photo of Leroy Jenkins"
-    }
-  },
-  {
-    name: "Veronica Gordon",
-    title: "UI/UX Designer",
-    photo: {
-      url: "https://source.unsplash.com/random/100x100/?portrait?0",
-      alt: "photo of Veronica Gordon"
-    }
-  },
-
-]
+const allMembers = await getCollection('members');
+console.log(allMembers);
 ---
 
 <MainLayout
@@ -45,7 +29,7 @@ const members = [
       <p class="p-2 text-sm font-medium tracki text-center uppercase">Development team</p>
       <h1 class="text-4xl font-bold leadi text-center sm:text-5xl">The talented people behind the scenes</h1>
       <div class="flex flex-row flex-wrap-reverse justify-center mt-8">
-        {members.map(member => <MemberCard {...member} />)}
+        {allMembers.map(member => <MemberCard {...member} />)}
       </div>
     </div>
   </section>
