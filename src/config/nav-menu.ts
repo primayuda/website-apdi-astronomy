@@ -74,6 +74,18 @@ export const navMenuConfig: NavMenuConfig = {
       href: "/faq",
     },
     {
+      title: "Blog",
+      href: "/blog",
+    },
+    {
+      title: "Member",
+      href: "/member",
+    },
+    {
+      title: "Pricing",
+      href: "/pricing",
+    },
+    {
       title: "About",
       href: "/about",
     },
