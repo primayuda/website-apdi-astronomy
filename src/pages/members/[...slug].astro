@@ -1,0 +1,35 @@
+---
+import MainLayout from '@/layouts/main-layout.astro';
+import { getCollection } from 'astro:content';
+// 1. Generate a new path for every collection entry
+export async function getStaticPaths() {
+  const allMembers = await getCollection('members');
+  return allMembers.map(member => ({
+    params: { slug: member.slug }, props: { member },
+  }));
+}
+// 2. For your template, you can get the member directly from the prop
+const { member } = Astro.props;
+const { Content } = await member.render();
+---
+
+<MainLayout
+  title="Members"
+  description="APDI Members"
+  mainClass="min-h-screen container max-w-screen-md py-10"
+>
+  <section>
+    <div class="space-y-6 text-center mb-14">
+      <h1 class="font-heading text-4xl text-center">
+        {member.data.name}
+      </h1>
+      <p class="text-muted-foreground text-md">
+        {member.data.title}
+      </p>
+      <img src={member.data.photo.url} alt={member.data.photo.alt} class="rounded-md mx-auto" />
+    </div>
+  </section>
+  <Content />
+</MainLayout>
+
+
