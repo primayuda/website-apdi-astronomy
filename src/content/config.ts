@@ -48,7 +48,7 @@ const members = defineCollection({
     name: z.string(),
     title: z.string(),
     photo: z.object({
-      url: z.string().url(),
+      url: z.string(),
       alt: z.string()
     })
   })

@@ -2,7 +2,7 @@
 name: "Veronica Gordon"
 title: "UI/UX Designer"
 photo: 
-  url: "https://source.unsplash.com/random/300x300/?portrait?0"
+  url: "/images/business-woman-2756210_1280.jpg"
   alt: "photo of Veronica Gordon"
 
 ---
