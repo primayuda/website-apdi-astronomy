@@ -47,10 +47,19 @@ const members = defineCollection({
   schema: z.object({
     name: z.string(),
     title: z.string(),
+    founder: z.boolean().default(false),
     photo: z.object({
       url: z.string(),
-      alt: z.string()
-    })
+      alt: z.string().default('photo of APDI member')
+    }),
+    email: z.string().email(),
+    linkedin: z.string().url(),
+    twitter: z.string().url().optional(),
+    instagram: z.string().url().optional(),
+    facebook: z.string().url().optional(),
+    dla: z.enum(["2021", "2022", "2023"]),
+    stream: z.string(),
+    skills: z.array(z.string()),
   })
 })
 
