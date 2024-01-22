@@ -1,7 +1,6 @@
 ---
 name: "Robby Saputra"
 title: "VP of Enterprise IT"
-founder: true
 photo: 
   url: "https://res.cloudinary.com/primayuda/image/upload/v1705883589/APDI/robby-saputra_v9x0lt.png"
   thumbnail: "https://res.cloudinary.com/primayuda/image/upload/c_thumb,w_200,g_face/v1705883589/APDI/robby-saputra_v9x0lt.png"
