@@ -4,6 +4,7 @@ import Prose from '@/components/layout/prose.astro';
 
 import { Badge } from '@/components/ui/badge';
 import { getCollection } from 'astro:content';
+import type { ReactElement, JSXElementConstructor, ReactNode, ReactPortal } from 'react';
 // 1. Generate a new path for every collection entry
 export async function getStaticPaths() {
   const allMembers = await getCollection('members');
@@ -34,7 +35,7 @@ const { Content } = await member.render();
     </div>
   </section>
   <section class="my-4">
-    {member.data.skills.map(skill => <Badge variant="outline" className='rounded-xl mx-2 my-1 px-4 italic'>{skill}</Badge>)}
+    {member.data.skills.map((skill: string) => <Badge variant="outline" className='rounded-xl mx-2 my-1 px-4 italic'>{skill}</Badge>)}
   </section>
   <section>
     <Prose>

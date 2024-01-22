@@ -50,6 +50,7 @@ const members = defineCollection({
     founder: z.boolean().default(false),
     photo: z.object({
       url: z.string(),
+      thumbnail: z.string().optional(),
       alt: z.string().default('photo of APDI member')
     }),
     email: z.string().email(),

@@ -3,7 +3,8 @@ name: "Agung Satriyo"
 title: "Chairman of Bérama Group"
 founder: true
 photo: 
-  url: "https://storage.tally.so/private/ARK-34.jpg?id=EqXjJX&accessToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IkVxWGpKWCIsImZvcm1JZCI6IjMxNFdyTSIsImlhdCI6MTY5NjIzNzI3Mn0.UCc5qFumZJDll9YZHBRR1uTSFac5DiqQc3xZb8OxIOc&signature=bf137c8f5e62f0b7ae7c7cf26673e5c714fc6799060742045d375c0cba2a69b7"
+  url: "https://res.cloudinary.com/primayuda/image/upload/v1705877442/APDI/agung-satriyo_rllz1y.jpg"
+  thumbnail: "https://res.cloudinary.com/primayuda/image/upload/c_thumb,w_200,g_face/v1705877442/APDI/agung-satriyo_rllz1y.jpg"
   alt: "photo of Agung Satriyo"
 email: "satriyopujiariadia22@gmail.com"
 linkedin: "https://www.linkedin.com/in/agungsatriyop22/"

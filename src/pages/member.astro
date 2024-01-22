@@ -5,6 +5,9 @@ import { getCollection } from "astro:content";
 
 const allMembers = await getCollection('members');
 // console.log(allMembers);
+const founders = allMembers.filter(member => member.data.founder);
+const members = allMembers.filter(member => !member.data.founder);
+// console.log(founders);
 ---
 
 <MainLayout
@@ -13,23 +16,30 @@ const allMembers = await getCollection('members');
   mainClass="min-h-screen container max-w-screen-xl py-10"
 >
   <section>
-    <div class="space-y-6 text-center mb-14">
+    <div class="space-y-6 text-center mb-4">
       <h1 class="font-heading text-4xl text-center">
-        Our Member
+        Anggota Asosiasi Pemimpin Digital Indonesia
       </h1>
       <p class="text-muted-foreground text-md">
-        Explore our member to find professional connection.
-        If you need further assistance, don't hesitate to contact our support
-        team for personalized help.
+        Silakan explorasi anggota APDI untuk koneksi professional.
+        Jika butuh bantuan, silakan kontak sekretariat kami.
       </p>
     </div>
   </section>
   <section class="py-6 dark:bg-gray-800 dark:text-gray-100">
     <div class="container flex flex-col items-center justify-center p-4 mx-auto sm:p-10">
-      <p class="p-2 text-sm font-medium tracki text-center uppercase">Development team</p>
-      <h1 class="text-4xl font-bold leadi text-center sm:text-5xl">The talented people behind the scenes</h1>
+      <p class="p-2 text-sm font-medium tracki text-center uppercase">Inisiator terbentuknya APDI</p>
+      <h1 class="text-3xl font-bold leadi text-center sm:text-5xl">Pengurus dan Pengawas</h1>
       <div class="flex flex-row flex-wrap-reverse justify-center mt-8">
-        {allMembers.map(member => <MemberCard {...member} />)}
+        {founders.map(member => <MemberCard {...member} />)}
+      </div>
+    </div>
+  </section>
+  <section class="py-6 dark:bg-gray-800 dark:text-gray-100">
+    <div class="container flex flex-col items-center justify-center p-4 mx-auto sm:p-10">
+      <h1 class="text-3xl font-bold leadi text-center sm:text-5xl">Anggota</h1>
+      <div class="flex flex-row flex-wrap-reverse justify-center mt-8">
+        {members.map(member => <MemberCard {...member} />)}
       </div>
     </div>
   </section>
