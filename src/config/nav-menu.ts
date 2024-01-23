@@ -74,7 +74,7 @@ export const navMenuConfig: NavMenuConfig = {
       href: "/faq",
     },
     {
-      title: "Blog",
+      title: "Berita",
       href: "/blog",
     },
     {

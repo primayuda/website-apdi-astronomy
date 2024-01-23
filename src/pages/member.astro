@@ -26,14 +26,17 @@ const members = allMembers.filter(member => !member.data.founder);
       </p>
     </div>
   </section>
-  <section class="py-6 dark:bg-gray-800 dark:text-gray-100">
-    <div class="container flex flex-col items-center justify-center p-4 mx-auto sm:p-10">
-      <p class="p-2 text-sm font-medium tracki text-center uppercase">Inisiator terbentuknya APDI</p>
-      <h1 class="text-3xl font-bold leadi text-center sm:text-5xl">Pengurus dan Pengawas</h1>
-      <div class="flex flex-row flex-wrap-reverse justify-center mt-8">
-        {founders.map(member => <MemberCard {...member} />)}
+  <section class="p-1 rounded-xl bg-gradient-to-r from-blue-700 via-blue-500 to-blue-400">
+    <div class="bg-slate-100 dark:bg-gray-800 dark:text-gray-100 p-2 rounded-xl">
+      <div class="container flex flex-col items-center justify-center p-4 mx-auto sm:p-10">
+        <p class="p-2 text-sm font-medium tracki text-center uppercase">Inisiator terbentuknya APDI</p>
+        <h1 class="text-3xl font-bold leadi text-center sm:text-5xl">Pengurus dan Pengawas</h1>
+        <div class="flex flex-row flex-wrap-reverse justify-center mt-8">
+          {founders.map(member => <MemberCard {...member} />)}
+        </div>
       </div>
     </div>
+    
   </section>
   <section class="py-6 dark:bg-gray-800 dark:text-gray-100">
     <div class="container flex flex-col items-center justify-center p-4 mx-auto sm:p-10">
