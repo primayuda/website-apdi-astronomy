@@ -1,7 +1,7 @@
 ---
 title: 'Kunjungan ke Kabupaten Tanah Laut'
 description: 'Kunjungan Kelompok 5 Alumni DLA x Tsinghua University ke Kabupaten Tanah Laut'
-pubDate: 'Jun 12 2021'
+pubDate: 'Dec 06 2021'
 coverImage: '/images/tanah-laut.jpg'
 category: 'kunjungan'
 ---
@@ -12,13 +12,15 @@ Tanah Laut (06/12/2021) – Seusai kunjungan ke Kota Banjarmasin, Kelompok 5 alu
 
 Dalam paparannya, Sukamta menyampaikan bahwa dirinya bersama jajarannya dapat melakukan pengembangan UMKM di Kabupaten Tanah Laut melalui Sosialita (Sistem Order Semua Instansi Lingkup Tanah Laut), suatu aplikasi hasil pengembangan Pemkab Tanah Laut. Menurut penuturannya, aplikasi ini merupakan satu-satunya aplikasi yang diakui oleh LKPP Kalsel, dengan jumlah transaksi yang diterima oleh UMKM Tanah Laut hampir 10 miliar.
 
-
+![Diversifikasi Pangan](/images/tanah-laut-2.jpg)
 
 **Diversifikasi Pangan, Salah Satu Upaya Indonesia Berdikari Pangan**
 
 Turut hadir mendampingi Kepala BPSDMP Kominfo Banjarmasin, Abdul Rahman Harahap dalam kunjungan ini. Dalam kesempatannya Abdul Rahman menyampaikan bahwa kebutuhan pangan masyarakat merupakan hal yang tidak bisa diabaikan, sehingga perlu antisipasi yang sangat terukur.
 
 Abdul Rahman menambahkan bahwa salah satu kebijakan pemerintah, yaitu terkait percepatan keanekaragaman konstruksi berbasis sumber daya lokal yang mengacu pada Peraturan Menteri Pertanian Nomor 43 Tahun 2009 dan Peraturan Menteri Pertanian Nomor 15 Tahun 2013. Dari kedua peraturan itu lahir program peningkatan diversifikasi dan ketahanan pangan, yang merupakan salah satu cara bagi Indonesia berdikari dalam hal pangan.
+
+![Jagung Kalsel](/images/tanah-laut-3.jpg)
 
 **Kalsel Daerah Penghasil Jagung Terbesar Kedua Setelah Kalbar**
 

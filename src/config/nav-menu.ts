@@ -78,15 +78,11 @@ export const navMenuConfig: NavMenuConfig = {
       href: "/blog",
     },
     {
-      title: "Member",
+      title: "Anggota",
       href: "/member",
     },
     {
-      title: "Pricing",
-      href: "/pricing",
-    },
-    {
-      title: "About",
+      title: "Tentang kami",
       href: "/about",
     },
   ],

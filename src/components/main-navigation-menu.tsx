@@ -21,7 +21,8 @@ export function MainNavigationMenu() {
   return (
     <NavigationMenu>
       <NavigationMenuList>
-        <NavigationMenuItem>
+        {/* Drop down menu temporary disabled */}
+        {/* <NavigationMenuItem>
           <NavigationMenuTrigger>{infos.title}</NavigationMenuTrigger>
           <NavigationMenuContent>
             <ul className="grid gap-3 p-6 md:w-[400px] lg:w-[500px] lg:grid-cols-[.75fr_1fr]">
@@ -44,9 +45,9 @@ export function MainNavigationMenu() {
               ))}
             </ul>
           </NavigationMenuContent>
-        </NavigationMenuItem>
+        </NavigationMenuItem> */}
 
-        <NavigationMenuItem>
+        {/* <NavigationMenuItem>
           <NavigationMenuTrigger>{examples.title}</NavigationMenuTrigger>
           <NavigationMenuContent>
             <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px] ">
@@ -55,7 +56,7 @@ export function MainNavigationMenu() {
               ))}
             </ul>
           </NavigationMenuContent>
-        </NavigationMenuItem>
+        </NavigationMenuItem> */}
 
         <NavigationMenuItem>
           {navMenuConfig.links.map((link) => (
