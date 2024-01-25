@@ -15,40 +15,51 @@ import {
   description="Association Members profile"
   mainClass="max-h-screen container max-w-screen-xl py-10"
 >
-  <section class="my-4">
-    
-    <Card>
-      <CardHeader>
-        <div class="max-w-screen mx-auto">
-          <CardTitle>Member Name</CardTitle>
-          <CardDescription>Member Position at APDI</CardDescription>
-        </div>
-        
-      </CardHeader>
-      <CardContent>
-        <div class="grid place-items-center grid-cols-1 lg:grid-cols-3 gap-4 shrink">
-          <div class="col-span-2 border-solid border-2 border-indigo-300 rounded-lg p-2 overflow-scroll">
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Blandit turpis cursus in hac. Vel eros donec ac odio tempor orci dapibus ultrices. Pharetra pharetra massa massa ultricies mi. Mi proin sed libero enim sed faucibus turpis in. Id venenatis a condimentum vitae sapien. Amet volutpat consequat mauris nunc. Risus sed vulputate odio ut enim blandit. Imperdiet massa tincidunt nunc pulvinar sapien. Lectus urna duis convallis convallis tellus id. At volutpat diam ut venenatis tellus in metus. Odio pellentesque diam volutpat commodo sed egestas egestas. Gravida dictum fusce ut placerat. Varius vel pharetra vel turpis nunc eget lorem dolor. At varius vel pharetra vel turpis nunc eget.
+  <!--
+  Heads up! 👋
 
-              Sed egestas egestas fringilla phasellus faucibus scelerisque eleifend. Aliquam etiam erat velit scelerisque in. Etiam dignissim diam quis enim lobortis scelerisque fermentum dui faucibus. Et molestie ac feugiat sed lectus vestibulum mattis ullamcorper. Lorem ipsum dolor sit amet consectetur adipiscing elit. A scelerisque purus semper eget. Maecenas pharetra convallis posuere morbi. Scelerisque in dictum non consectetur. Tellus id interdum velit laoreet id donec ultrices. Tempus imperdiet nulla malesuada pellentesque elit. Nibh praesent tristique magna sit amet purus gravida. Ipsum dolor sit amet consectetur adipiscing elit duis tristique sollicitudin. Amet massa vitae tortor condimentum lacinia quis vel. Et ligula ullamcorper malesuada proin libero nunc consequat interdum.
-            </p>
-          </div>
-          
-          <div class="border-solid border-2 border-indigo-300 rounded-lg p-4 flex">
-            <img class="mx-auto my-auto max-h-36" src="/images/business-woman-2756210_1280-removebg.png" />
-          </div>
-          
-        </div>        
-      </CardContent>
-      <CardFooter>
-        <div class="">
-          <p>Member contacts</p>
-        </div>
-        
-      </CardFooter>
-    </Card>
-    
-  </section>
+  This component comes with some `rtl` classes. Please remove them if they are not needed in your project.
+-->
+
+<section
+class="relative rounded-xl bg-[url(https://images.unsplash.com/photo-1604014237800-1c9102c219da?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80)] bg-cover bg-center bg-no-repeat"
+>
+<div
+  class="absolute inset-0 bg-white/75 sm:bg-transparent sm:from-white/95 sm:to-white/25 sm:bg-gradient-to-r"
+></div>
+
+<div
+  class="relative mx-auto max-w-screen-xl px-4 py-32 sm:px-6 lg:flex lg:h-screen lg:items-center lg:px-8"
+>
+  <div class="max-w-xl text-center sm:text-left">
+    <h1 class="text-3xl font-extrabold sm:text-5xl">
+      Let us find your
+
+      <strong class="block bg-gradient-to-r from-rose-700 to-white-100 bg-clip-text text-3xl font-extrabold text-transparent sm:text-5xl"> Forever Home. </strong>
+    </h1>
+
+    <p class="mt-4 max-w-lg sm:text-xl/relaxed">
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt illo tenetur fuga ducimus
+      numquam ea!
+    </p>
+
+    <div class="mt-8 flex flex-wrap gap-4 text-center">
+      <a
+        href="#"
+        class="block w-full rounded bg-rose-600 px-12 py-3 text-sm font-medium text-white shadow hover:bg-rose-700 focus:outline-none focus:ring active:bg-rose-500 sm:w-auto"
+      >
+        Get Started
+      </a>
+
+      <a
+        href="#"
+        class="block w-full rounded bg-white px-12 py-3 text-sm font-medium text-rose-600 shadow hover:text-rose-700 focus:outline-none focus:ring active:text-rose-500 sm:w-auto"
+      >
+        Learn More
+      </a>
+    </div>
+  </div>
+</div>
+</section>
 </MainLayout>
 
