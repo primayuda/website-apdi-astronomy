@@ -8,28 +8,28 @@ import {
 const faqData = [
 	{
 		id: "item-1",
-		question: "What does your company do?",
-		answer: "Our company provides innovative software solutions to help businesses automate their processes and improve operational efficiency.",
+		question: "Apa saja yang dikerjakan oleh Asosiasi Pemimpin Digital (APDI)?",
+		answer: "APDI bertujuan untuk mewujudkan ekosistem kepemimpinan digital yang kondusif, serta membina kompetensi Anggota melalui upaya pembinaan, pengembangan, dan perlindungan, guna menunjang pembangunan digital ekonomi nasional dan mampu bersaing di tingkat global.",
 	},
 	{
 		id: "item-2",
-		question: "How can I contact your customer service?",
-		answer: "You can contact us by sending an email to support@example.com or by calling our customer service number at +1 123-456-7890.",
+		question: "Bagaimana menghubungi APDI ?",
+		answer: "Anda dapat melihat kontak kami di bagian footer, email kami di hai@pemimpindigital.id atau WA ke 08111 380 2734 / 0838 98888 168.",
 	},
 	{
 		id: "item-3",
-		question: "What are your company's business hours?",
-		answer: "We are open from Monday to Friday, from 9:00 AM to 5:00 PM. Our customer service is available during these hours to assist you.",
+		question: "Kapan saja saya bisa menghubungi APDI?",
+		answer: "Sekretariat kami buka pada hari Senin - Jumat, jam 9:00 pagi sampai 5:00 sore. Kontak melalui email dapat dilakukan setiap saat.",
 	},
 	{
 		id: "item-4",
-		question: "Do you accept product returns?",
-		answer: "Yes, we accept product returns within 30 days of purchase, provided the product is in its original condition. Please refer to our return policy for more information.",
+		question: "Bagaimana bergabung dengan APDI?",
+		answer: "Semua alumni Digital Leadership Academy otomatis menjadi anggota APDI. Untuk keterangan lebih lanjut silakan kontak sekretariat kami.",
 	},
 	{
 		id: "item-5",
-		question: "Can I try your software for free?",
-		answer: "Yes, we offer a free 14-day trial of our software. You can sign up on our website to start your trial.",
+		question: "Bagaimana menjadi partner APDI?",
+		answer: "Silakan kontak sekretariat kami untuk menjalin kerjasama dengan APDI.",
 	},
 ];
 

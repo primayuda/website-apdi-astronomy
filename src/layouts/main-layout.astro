@@ -42,11 +42,12 @@ const { title, description, mainClass } = Astro.props;
     />
 
     <nav slot="right-header">
+      <!-- Login disabled for now. suppose to go to /login -->
       <a
-        href="/login"
+        href="#"
         class={cn(buttonVariants({ variant: "outline", size: "sm" }), "px-4")}
       >
-        Login
+        Login (coming soon)
       </a>
     </nav>
   </Header>

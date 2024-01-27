@@ -2,6 +2,7 @@
 import MainLayout from "@/layouts/main-layout.astro";
 import MemberCard from "@/components/cards/member-card.astro"
 import { getCollection } from "astro:content";
+import Icon from "astro-icon";
 
 const allMembers = await getCollection('members');
 // console.log(allMembers);
@@ -24,6 +25,10 @@ const members = allMembers.filter(member => !member.data.founder);
         Silakan explorasi anggota APDI untuk koneksi professional.
         Jika butuh bantuan, silakan kontak sekretariat kami.
       </p>
+      <span class="flex items-center lg:w-full max-w-xs h-10 rounded-md px-2 lg:px-3 border text-muted-foreground mx-auto">
+        <Icon name="ri:search-line" class="size-5" />
+        <span class="text-sm ml-2 hidden lg:flex">Search (coming soon)</span>
+      </span>
     </div>
   </section>
   <section class="p-1 rounded-xl bg-gradient-to-r from-blue-700 via-blue-500 to-blue-400">
