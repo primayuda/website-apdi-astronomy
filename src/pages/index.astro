@@ -9,6 +9,8 @@ import Stats from "@/components/Stats.astro"
 
 import 'transition-style';
 import { Input } from "@/components/ui/input";
+import { Card, CardHeader, CardTitle, CardDescription, CardContent, CardFooter } from "@/components/ui/card";
+import { GraduationCap } from "lucide-react";
 ---
 
 <MainLayout title="APDI">
@@ -302,11 +304,117 @@ import { Input } from "@/components/ui/input";
       >
         Asosiasi Pemimpin Digital terbuka untuk bekerjasama dengan lembaga maupun professional dalam rangka percepatan Transformasi Digital Indonesia.
       </p>
-      <div class="container flex flex-cols justify-between">
-        <div>1</div>
-        <div>2</div>
-        <div>3</div>
-        <div>4</div>
+      <div class="container grid grid-rows md:grid-cols-2 lg:grid-cols-4 gap-4">
+        <Card className="shadow-xl">
+          <CardHeader>
+            <CardTitle>
+              <svg 
+                xmlns="http://www.w3.org/2000/svg" 
+                width="48" height="48" 
+                viewBox="0 0 24 24" 
+                fill="none" 
+                stroke="currentColor" 
+                stroke-width="2" 
+                stroke-linecap="round" 
+                stroke-linejoin="round" 
+                class="lucide lucide-graduation-cap"
+                >
+                  <path d="M22 10v6M2 10l10-5 10 5-10 5z"/>
+                  <path d="M6 12v5c3 3 9 3 12 0v-5"/>
+              </svg>
+            </CardTitle>
+          </CardHeader>
+          <CardContent>
+            <p>Membangun sistem dan organisasi untuk mendukung pengembangan kepemimpinan digital
+            </p>
+          </CardContent>
+        </Card>
+        
+        <Card className="shadow-xl">
+          <CardHeader>
+            <CardTitle>
+              <svg 
+                xmlns="http://www.w3.org/2000/svg" 
+                width="48" height="48" 
+                viewBox="0 0 24 24" 
+                fill="none" 
+                stroke="currentColor" 
+                stroke-width="2" 
+                stroke-linecap="round" 
+                stroke-linejoin="round" 
+                class="lucide lucide-boxes"
+                >
+                  <path d="M2.97 12.92A2 2 0 0 0 2 14.63v3.24a2 2 0 0 0 .97 1.71l3 1.8a2 2 0 0 0 2.06 0L12 19v-5.5l-5-3-4.03 2.42Z"/>
+                  <path d="m7 16.5-4.74-2.85"/>
+                  <path d="m7 16.5 5-3"/>
+                  <path d="M7 16.5v5.17"/>
+                  <path d="M12 13.5V19l3.97 2.38a2 2 0 0 0 2.06 0l3-1.8a2 2 0 0 0 .97-1.71v-3.24a2 2 0 0 0-.97-1.71L17 10.5l-5 3Z"/>
+                  <path d="m17 16.5-5-3"/>
+                  <path d="m17 16.5 4.74-2.85"/>
+                  <path d="M17 16.5v5.17"/>
+                  <path d="M7.97 4.42A2 2 0 0 0 7 6.13v4.37l5 3 5-3V6.13a2 2 0 0 0-.97-1.71l-3-1.8a2 2 0 0 0-2.06 0l-3 1.8Z"/>
+                  <path d="M12 8 7.26 5.15"/>
+                  <path d="m12 8 4.74-2.85"/>
+                  <path d="M12 13.5V8"/>
+              </svg>
+            </CardTitle>
+          </CardHeader>
+          <CardContent>
+            <p>Mengembangkan platform untuk meningkatkan efisiensi dan efektifitas proses bisnis digital
+            </p>
+          </CardContent>
+        </Card>
+        <Card className="shadow-xl">
+          <CardHeader>
+            <CardTitle>
+              <svg 
+                xmlns="http://www.w3.org/2000/svg" 
+                width="48" height="48" 
+                viewBox="0 0 24 24" 
+                fill="none" 
+                stroke="currentColor" 
+                stroke-width="2" 
+                stroke-linecap="round" 
+                stroke-linejoin="round" 
+                class="lucide lucide-combine"
+              >
+                <rect width="8" height="8" x="2" y="2" rx="2"/>
+                <path d="M14 2c1.1 0 2 .9 2 2v4c0 1.1-.9 2-2 2"/>
+                <path d="M20 2c1.1 0 2 .9 2 2v4c0 1.1-.9 2-2 2"/>
+                <path d="M10 18H5c-1.7 0-3-1.3-3-3v-1"/>
+                <polyline points="7 21 10 18 7 15"/>
+                <rect width="8" height="8" x="14" y="14" rx="2"/>
+              </svg>
+            </CardTitle>
+          </CardHeader>
+          <CardContent>
+            <p>Membangun kolaborasi dan sinergi dengan berbagai pemangku kepentingan untuk meningkatkan literasi digital
+            </p>
+          </CardContent>
+        </Card>
+        <Card className="shadow-xl">
+          <CardHeader>
+            <CardTitle>
+              <svg 
+                xmlns="http://www.w3.org/2000/svg" 
+                width="48" height="48" 
+                viewBox="0 0 24 24" 
+                fill="none" 
+                stroke="currentColor" 
+                stroke-width="2" 
+                stroke-linecap="round" 
+                stroke-linejoin="round" 
+                class="lucide lucide-star"
+              >
+                <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
+              </svg>
+            </CardTitle>
+          </CardHeader>
+          <CardContent>
+            <p>Menciptakan kemampuan inovasi digital yang berkelanjutan, berdaya saing, berwawasan lingkungan dan bermanfaat bagi masyarakat
+            </p>
+          </CardContent>
+        </Card>
       </div>
     </div>
   </section>
