@@ -1,5 +1,16 @@
 ---
 import MainLayout from "@/layouts/main-layout.astro";
+
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardFooter,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card"
+
+import { Eye, PenTool } from "lucide-react";
 ---
 
 <MainLayout
@@ -18,5 +29,29 @@ import MainLayout from "@/layouts/main-layout.astro";
       <li>Asosiasi Pemimpin Digital Indonesia (APDI) merupakan wadah konsolidasi, potensi, dan representasi Alumni DLA dan Pemimpin Digital lainnya</li>
     </ul>
   
+  </section>
+  <section class="flex flex-col lg:flex-row gap-10 justify-center mt-20">
+    <Card className="drop-shadow-lg shadow-indigo-500/50">
+      <CardHeader>
+        <CardTitle>Misi</CardTitle>
+        <CardDescription><PenTool /></CardDescription>
+      </CardHeader>
+      <CardContent>
+        <p>Membangun sistem dan kapabilitas organisasi untuk mendukung pengembangan kepemimpinan digital. Membangun kolaborasi dan sinergi dengan berbagai pemangku kepentingan untuk mengembangkan ekonomi digital.
+        </p>
+      </CardContent>
+    
+    </Card>
+    <Card className="drop-shadow-lg shadow-indigo-500/50">
+      <CardHeader>
+        <CardTitle>Visi</CardTitle>
+        <CardDescription><Eye /></CardDescription>
+      </CardHeader>
+      <CardContent>
+        <p>Menjadi asosiasi mitra utama Pemerintah dan Badan Usaha dalam percepatan transformasi dan inovasi digital untuk mencapai tujuan pembangunan nasional dengan menjunjung tinggi nilai moral & etika, integritas secara professional, dan kolaboratif berdasarkan Pancasila</p>
+      </CardContent>
+      
+    </Card>
+        
   </section>
 </MainLayout>
