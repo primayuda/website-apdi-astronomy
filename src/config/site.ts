@@ -5,9 +5,9 @@ export const siteConfig: SiteConfig = {
   description:
     "Asosiasi Pemimpin Digital Indonesia",
   url: "https://astro-nomy.vercel.app",
-  ogImage: "https://astro-nomy.vercel.app/og.jpg",
+  ogImage: "https://res.cloudinary.com/primayuda/image/upload/v1695904094/APDI/LogoAPDI_uzldmh.png",
   links: {
-    twitter: "https://twitter.com/miickasmt",
-    github: "https://github.com/mickasmt/astro-nomy",
+    twitter: "https://twitter.com/a_primayuda",
+    github: "https://github.com/primayuda/prims-astro-nomy",
   },
 };
