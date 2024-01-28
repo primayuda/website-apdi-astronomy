@@ -9,7 +9,7 @@ import alpinejs from "@astrojs/alpinejs";
 
 // https://astro.build/config
 export default defineConfig({
-  output: "hybrid",
+  output: "server",
   site: "https://website-apdi.vercel.app/",
   integrations: [mdx({
     syntaxHighlight: 'shiki',
