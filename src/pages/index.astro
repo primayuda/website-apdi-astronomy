@@ -10,14 +10,20 @@ import Stats from "@/components/Stats.astro"
 import 'transition-style';
 import { Input } from "@/components/ui/input";
 import { Card, CardHeader, CardTitle, CardDescription, CardContent, CardFooter } from "@/components/ui/card";
-import { GraduationCap } from "lucide-react";
+import { ArrowUpCircle, GraduationCap } from "lucide-react";
+
+import ToTopButton from "@/components/ToTopButton.jsx";
 ---
 
 <MainLayout title="APDI">
+  <!-- Adding scroll to top button - currently only on Index Page & Member Page -->
+  <!-- Will add to more pages once learn about Interaction Obsever API -->
+  <ToTopButton client:load />
   <section
   class="max-h-screen container max-w-screen-xl py-10 mt-10 my-5 relative rounded-xl bg-[url(https://res.cloudinary.com/primayuda/image/upload/w_1000,ar_16:9,c_fill,g_auto,e_sharpen/v1706178572/APDI/future-leader_mox7c7.jpg)] bg-cover bg-center bg-no-repeat"
   transition-style="in:circle:bottom-right"
   >
+  
   <!-- Blob Background -->
   <!-- <div class="absolute w-full lg:w-1/2 inset-y-0 lg:right-0 ">
     <span class="absolute -left-6 md:left-4 top-24 lg:top-28 w-24 h-24 rotate-90 skew-x-12 rounded-3xl bg-green-400 blur-xl opacity-60 lg:opacity-95 lg:block hidden"></span>
@@ -33,7 +39,7 @@ import { GraduationCap } from "lucide-react";
     class="relative mx-auto max-w-screen-xl px-4 py-32 sm:px-6 lg:flex lg:h-screen lg:items-center lg:px-8"
   >
     <div class="max-w-xl text-center sm:text-left">
-      <img src="/images/LogoAPDI.png" class="w-96" />
+      <img src="/images/LogoAPDI.png" class="w-96" alt="logo APDI"/>
       <h1 class="text-3xl font-extrabold sm:text-5xl">
         Pemimpin Digital
 
@@ -121,7 +127,7 @@ import { GraduationCap } from "lucide-react";
       <h2 class="font-heading text-3xl leading-[1.1] sm:text-3xl md:text-6xl">
         Percepatan Transformasi Digital
       </h2>
-      <img src="/images/JokowiAPDI.png" class="rounded-xl shadow-xl shadow-indigo-500/50" />
+      <img src="/images/JokowiAPDI.png" class="rounded-xl shadow-xl shadow-indigo-500/50" alt="President Jokowi" />
       <p
         class="max-w-[85%] leading-normal text-muted-foreground sm:text-xl sm:leading-7 balance-text"
       >
@@ -318,6 +324,7 @@ import { GraduationCap } from "lucide-react";
                 stroke-linecap="round" 
                 stroke-linejoin="round" 
                 class="lucide lucide-graduation-cap"
+                aria-label="graduation cap icon"
                 >
                   <path d="M22 10v6M2 10l10-5 10 5-10 5z"/>
                   <path d="M6 12v5c3 3 9 3 12 0v-5"/>
@@ -343,6 +350,7 @@ import { GraduationCap } from "lucide-react";
                 stroke-linecap="round" 
                 stroke-linejoin="round" 
                 class="lucide lucide-boxes"
+                aria-label="block icon"
                 >
                   <path d="M2.97 12.92A2 2 0 0 0 2 14.63v3.24a2 2 0 0 0 .97 1.71l3 1.8a2 2 0 0 0 2.06 0L12 19v-5.5l-5-3-4.03 2.42Z"/>
                   <path d="m7 16.5-4.74-2.85"/>
@@ -377,6 +385,7 @@ import { GraduationCap } from "lucide-react";
                 stroke-linecap="round" 
                 stroke-linejoin="round" 
                 class="lucide lucide-combine"
+                aria-label="combine icon"
               >
                 <rect width="8" height="8" x="2" y="2" rx="2"/>
                 <path d="M14 2c1.1 0 2 .9 2 2v4c0 1.1-.9 2-2 2"/>
@@ -405,6 +414,7 @@ import { GraduationCap } from "lucide-react";
                 stroke-linecap="round" 
                 stroke-linejoin="round" 
                 class="lucide lucide-star"
+                aria-label="star icon"
               >
                 <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
               </svg>

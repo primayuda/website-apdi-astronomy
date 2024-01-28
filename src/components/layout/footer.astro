@@ -3,6 +3,7 @@ import { siteConfig } from "@/config/site";
 import { cn } from "@/lib/utils";
 import { Icon } from "astro-icon";
 import { ThemeToggle } from "@/components/theme-toggle";
+import { Instagram } from "lucide-react";
 
 type Props = {
   className?: string;
@@ -19,14 +20,14 @@ const { className } = Astro.props;
       class="flex flex-col items-center gap-4 px-8 md:flex-row md:gap-2 md:px-0"
     >
       <a href="/" aria-label="APDI homepage">
-        <img src="/favicon.png" class="size-10" />
+        <img src="/favicon.png" class="size-10" alt="APDI logo" />
       </a
       >
 
       <p class="text-center text-sm leading-loose md:text-left balance-text">
-        Sekretariat{" "}
+        Alamat{" "}
         <a
-          href="https://pemimpindigital.id"
+          href="https://maps.app.goo.gl/PKccZs1E8HSNhZSM9"
           target="_blank"
           rel="noreferrer"
           class="font-medium underline underline-offset-4"
@@ -42,16 +43,51 @@ const { className } = Astro.props;
         >
           hai@pemimpindigital.id
         </a>
-         . Kontak WhatsApp Sekretariat{" "}
+         . WhatsApp{" "}
+        <a
+          href="https://wa.me/6281113802734?text=Saya%20ingin%20informasi%20lebih%20lanjut%20tentang%20APDI"
+          target="_blank"
+          rel="noreferrer"
+          class="font-medium underline underline-offset-4"
+        >
+        08111 380 2734
+        </a>
+        <a
+          href="https://wa.me/6283898888168?text=Saya%20ingin%20informasi%20lebih%20lanjut%20tentang%20APDI"
+          target="_blank"
+          rel="noreferrer"
+          class="font-medium underline underline-offset-4"
+        >
+         / 0838 98888 168
+        </a>
+        . {" "}
+        <a
+          href="https://www.instagram.com/pemimpindigital/"
+          target="_blank"
+          rel="noreferrer"
+          class="font-medium underline underline-offset-4"
+        >
+         Instagram
+        </a>
+        . {" "}
+        <!-- Temporary disabled -->
+        <!-- <a
+          href="#"
+          target="_blank"
+          rel="noreferrer"
+          class="font-medium underline underline-offset-4"
+        >
+         LinkedIn
+        </a>
+        . {" "}
         <a
           href="#"
           target="_blank"
           rel="noreferrer"
           class="font-medium underline underline-offset-4"
         >
-        08111 380 2734 / 0838 98888 168
-        </a>
-        
+         Facebook
+        </a> -->
       </p>
     </div>
 

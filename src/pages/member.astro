@@ -9,6 +9,8 @@ const allMembers = await getCollection('members');
 const founders = allMembers.filter(member => member.data.founder);
 const members = allMembers.filter(member => !member.data.founder);
 // console.log(founders);
+
+import ToTopButton from "@/components/ToTopButton";
 ---
 
 <MainLayout
@@ -16,6 +18,8 @@ const members = allMembers.filter(member => !member.data.founder);
   description="Association Members"
   mainClass="min-h-screen container max-w-screen-xl py-10"
 >
+<!-- Adding scroll to top button - currently only on Index Page & Member Page -->
+  <ToTopButton client:load />
   <section>
     <div class="space-y-6 text-center mb-4">
       <h1 class="font-heading text-4xl text-center">
