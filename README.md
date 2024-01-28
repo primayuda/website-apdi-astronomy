@@ -1,19 +1,12 @@
-# Astronomy
+# Website Asosasi Pemimpin Digital Indonesia
 
-An open source application built using the latest features in Astro v4 with shadcn/ui.
+An open source website built using the latest features in Astro v4 with shadcn/ui using template from [@miickasmt](https://twitter.com/miickasmt) .
 
-![blog](public/og.jpg)
-
-> **Warning**
-> This app is a work in progress. I'm building this in public. You can follow the progress on Twitter [@miickasmt](https://twitter.com/miickasmt).
-> See the roadmap below.
+![blog](public/og.png)
 
 ## About this project
 
 This project as an experiment to see how a modern app (with features like authentication, subscriptions, API routes, Markdown, Content Collections ...etc) would work in Astro v4 and shadcn/ui.
-
-> **Note**
-> I would like to inform you that for the time being, my example app built with Astro.js is still under development and **cannot yet be considered a starter template**.
 
 ## Project Structure
 
@@ -82,13 +75,13 @@ _Not implemented yet :_
 1. Install dependencies using pnpm:
 
 ```sh
-pnpm install
+npm install
 ```
 
 2. Start the development server:
 
 ```sh
-pnpm run dev
+npm run dev
 ```
 
 ## Credit
