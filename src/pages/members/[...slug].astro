@@ -48,6 +48,7 @@ const { Content } = await member.render();
         {member.data.title}
       </p>
       <h2 class="font-heading text-center text-2xl text-blue-500">{member.data.founder ? "Pendiri" : "Anggota"} APDI</h2>
+      {member.data.apdi && <h2 class="font-heading text-center text-2xl text-rose-500">{member.data.apdi}</h2>}
       <img src={member.data.photo.url} alt={member.data.photo.alt} class="rounded-md mx-auto h-80 shadow-2xl shadow-indigo-500/50" />
     </div>
   </section>

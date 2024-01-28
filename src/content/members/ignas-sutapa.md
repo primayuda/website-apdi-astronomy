@@ -2,6 +2,7 @@
 name: "Prof.Dr. Ignasius D.A. Sutapa, MSc."
 title: "Executive Director of APCE - UNESCO C2C"
 founder: true
+apdi: "Ketua Umum"
 photo: 
   url: "https://res.cloudinary.com/primayuda/image/upload/v1679386800/APDI/Ignasius_lhqnlv.jpg"
   thumbnail: "https://res.cloudinary.com/primayuda/image/upload/c_thumb,w_200,g_face/v1679386800/APDI/Ignasius_lhqnlv.jpg"

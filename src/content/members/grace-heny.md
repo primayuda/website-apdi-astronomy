@@ -2,6 +2,7 @@
 name: "Grace Heny"
 title: "Principal Consultant 168 Solution"
 founder: true
+apdi: "Sekretaris Jendral"
 photo: 
   url: "https://res.cloudinary.com/primayuda/image/upload/v1679386675/APDI/Grace-Heny_m4cl22.jpg"
   thumbnail: "https://res.cloudinary.com/primayuda/image/upload/c_thumb,w_200,g_face/v1679386675/APDI/Grace-Heny_m4cl22.jpg"

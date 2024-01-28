@@ -2,6 +2,7 @@
 name: "Hung Hung Natalya, S.E., S.H., M.Sc."
 title: "Managing Partner at PT Oneway SmarTax Indonesia"
 founder: true
+apdi: "Bendahara Umum"
 photo: 
   url: "https://res.cloudinary.com/primayuda/image/upload/v1705879007/APDI/hunghung_khsbjm.jpg"
   thumbnail: "https://res.cloudinary.com/primayuda/image/upload/c_thumb,w_200,g_face/v1705879007/APDI/hunghung_khsbjm.jpg"

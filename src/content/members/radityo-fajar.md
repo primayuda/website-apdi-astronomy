@@ -2,6 +2,7 @@
 name: "Dr. Radityo Fajar Arianto, S.E., M.B.A."
 title: "Dosen pada Universitas Pelita Harapan"
 founder: true
+apdi: "Pengawas"
 photo: 
   url: "https://res.cloudinary.com/primayuda/image/upload/v1679386801/APDI/Radityo_bkkhl3.jpg"
   thumbnail: "https://res.cloudinary.com/primayuda/image/upload/c_thumb,w_200,g_face/v1679386801/APDI/Radityo_bkkhl3.jpg"

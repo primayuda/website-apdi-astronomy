@@ -48,6 +48,7 @@ const members = defineCollection({
     name: z.string(),
     title: z.string(),
     founder: z.boolean().default(false),
+    apdi: z.string().optional(),
     photo: z.object({
       url: z.string(),
       thumbnail: z.string().optional(),

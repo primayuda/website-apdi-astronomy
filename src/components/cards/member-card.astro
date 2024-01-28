@@ -17,8 +17,9 @@ const plainName = secondPartName.filter((element: string) => element !== 'Prof' 
       <p class="text-xl font-semibold leading hover:underline">{plainName}</p>
     </a>
     <p>{member.data.title}</p>
+    
   </div>
-  
+  {member.data.apdi && <p class="text-lg font-semibold text-rose-500">{member.data.apdi}</p>}
   <div class="flex items-center justify-center p-3 space-x-3 border-t-2 border-slate-400">
     <!-- Email icon -->
     <a rel="noopener noreferrer" href=`mailto:${member.data.email}` title="Email" class="hover:text-blue-400 dark:text-gray-900 hover:dark:text-blue-400">

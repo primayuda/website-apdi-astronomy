@@ -2,6 +2,7 @@
 name: "Ferdian Agustiana"
 title: "Direktur PT Angkasa Pura Sarana Digital"
 founder: true
+apdi: "Pengawas"
 photo: 
   url: "https://res.cloudinary.com/primayuda/image/upload/v1679386801/APDI/Ferdian-Agustiana-_pdzxtp.jpg"
   thumbnail: "https://res.cloudinary.com/primayuda/image/upload/c_thumb,w_200,g_face/v1679386801/APDI/Ferdian-Agustiana-_pdzxtp.jpg"

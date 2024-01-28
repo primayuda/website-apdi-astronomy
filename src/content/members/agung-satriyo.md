@@ -2,6 +2,7 @@
 name: "Agung Satriyo"
 title: "Chairman of Bérama Group"
 founder: true
+apdi: "Pengawas"
 photo: 
   url: "https://res.cloudinary.com/primayuda/image/upload/v1705877442/APDI/agung-satriyo_rllz1y.jpg"
   thumbnail: "https://res.cloudinary.com/primayuda/image/upload/c_thumb,w_200,g_face/v1705877442/APDI/agung-satriyo_rllz1y.jpg"

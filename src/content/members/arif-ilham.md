@@ -2,6 +2,7 @@
 name: "Ir. Arif Ilham, S.T., M.BA., M.Sc."
 title: "Chairman of Permanent Committee - Jakarta Chamber of Commerce and Industry"
 founder: true
+apdi: "Wakil Ketua"
 photo: 
   url: "https://res.cloudinary.com/primayuda/image/upload/v1706437369/APDI/Arif_la5rw5.png"
   thumbnail: "https://res.cloudinary.com/primayuda/image/upload/c_thumb,w_200,g_face/v1706437369/APDI/Arif_la5rw5.png"

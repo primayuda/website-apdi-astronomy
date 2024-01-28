@@ -2,6 +2,7 @@
 name: "Raden Rendra Arjakusumah"
 title: "Telco & Financial Services Consultant"
 founder: true
+apdi: "Pengawas"
 photo: 
   url: "https://res.cloudinary.com/primayuda/image/upload/v1706440171/APDI/Rendra_v78c7q.jpg"
   thumbnail: "https://res.cloudinary.com/primayuda/image/upload/c_thumb,w_200,g_face/v1706440171/APDI/Rendra_v78c7q.jpg"
