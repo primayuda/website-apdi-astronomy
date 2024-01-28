@@ -1,14 +1,20 @@
 ---
 const member = Astro.props;
 // console.log(member);
-// TODO : remove the Dr. or Ir. from the member name for the card
+// Remove the Prof. Dr. or Ir. from the member name for the card
+const firstPartName = member.data.name.split(',')[0];
+const secondPartName = firstPartName.split('.');
+
+// console.log(secondPartName);
+const plainName = secondPartName.filter((element: string) => element !== 'Prof' && element !== 'Dr' && element !== 'Ir'  ).join(' ');
+// console.log(plainName);
 ---
 <div class="flex flex-col justify-center w-full px-8 mx-6 my-12 text-center bg-slate-200 rounded-md md:w-96 lg:w-80 xl:w-64 dark:bg-gray-100 dark:text-gray-800">
   
   <img alt={member.data.photo.alt} class="self-center flex-shrink-0 w-24 h-24 -mt-12 bg-center bg-cover hover:scale-110 rounded-full dark:bg-gray-500" src={member.data.photo.thumbnail ? member.data.photo.thumbnail : member.data.photo.url} width="100px" height="100px">
   <div class="flex-1 my-4">
     <a href=`/members/${member.slug}`>
-      <p class="text-xl font-semibold leading hover:underline">{member.data.name.split(',')[0]}</p>
+      <p class="text-xl font-semibold leading hover:underline">{plainName}</p>
     </a>
     <p>{member.data.title}</p>
   </div>

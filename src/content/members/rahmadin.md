@@ -1,5 +1,5 @@
 ---
-name: "Dr Rahmaddin MY AKS, MSi"
+name: "Dr. Rahmaddin MY AKS, MSi"
 title: "Kepala Biro Pengadaan Barang dan Jasa Setda Provinsi Kalimantan Selatan"
 photo: 
   url: "https://res.cloudinary.com/primayuda/image/upload/v1705906355/APDI/rahmaddin_w6g2ib.jpg"
