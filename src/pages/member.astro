@@ -1,4 +1,6 @@
 ---
+export const prerender = true;
+
 import MainLayout from "@/layouts/main-layout.astro";
 import MemberCard from "@/components/cards/member-card.astro"
 import { getCollection } from "astro:content";
@@ -10,7 +12,33 @@ const founders = allMembers.filter(member => member.data.founder);
 const members = allMembers.filter(member => !member.data.founder);
 // console.log(founders);
 
+// Skills Array from Founders
+const initialValue: string[] = [];
+const mergedFoundersSkills = founders.reduce((accumulator, member) => accumulator.concat(member.data.skills), initialValue);
+
+// Skills Array from Members
+const mergedMembersSkills = members.reduce((accumulator, member) => accumulator.concat(member.data.skills), initialValue );
+
+// Combine both and create array of object containing frequencys of each skill
+const mergedSkills = mergedFoundersSkills.concat(mergedMembersSkills);
+// console.log(mergedSkills);
+// skillsCount array will be [{skill: "Data Management", count: 1}, {skill: "IT Transformation", count: 2} ]
+
+let initialSkills = {}
+let skillsCount = mergedSkills.reduce(function (value:any, value2:any) {
+    return (
+        value[value2] ? ++value[value2] :(value[value2] = 1),
+        value
+    );
+}, initialSkills);
+
+const skillsCountArray = Object.entries(skillsCount);
+// console.log(skillsCountArray);
+
+// Adding back to Top button
 import ToTopButton from "@/components/ToTopButton";
+import { Badge } from "@/components/ui/badge"
+
 ---
 
 <MainLayout
@@ -33,6 +61,15 @@ import ToTopButton from "@/components/ToTopButton";
         <Icon name="ri:search-line" class="size-5" />
         <span class="text-sm ml-2 hidden lg:flex">Search (coming soon)</span>
       </span>
+<!-- Show all competence with the count. TODO: filter based on the selected competence --> 
+      <h2 class="font-heading text-xl text-center">Kompetensi anggota APDI</h2>
+      <div class="container gap-2">
+        {skillsCountArray.map((skill) => 
+          <Badge variant="outline" className="mx-2 my-2 rounded-full">
+            {skill[0]} {skill[1] > 1 && <span class="font-semibold ml-3 text-indigo-400">{skill[1]}</span>}
+          </Badge>)}
+      </div>
+      
     </div>
   </section>
   <!-- TODO: Provide title of Pengurus & Pengawas APDI -->
