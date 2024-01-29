@@ -32,7 +32,7 @@ let skillsCount = mergedSkills.reduce(function (value:any, value2:any) {
     );
 }, initialSkills);
 
-const skillsCountArray = Object.entries(skillsCount);
+const skillsCountArray: [string, number][] = Object.entries(skillsCount);
 // console.log(skillsCountArray);
 
 // Adding back to Top button
@@ -64,8 +64,8 @@ import { Badge } from "@/components/ui/badge"
 <!-- Show all competence with the count. TODO: filter based on the selected competence --> 
       <h2 class="font-heading text-xl text-center">Kompetensi anggota APDI</h2>
       <div class="container gap-2">
-        {skillsCountArray.map((skill) => 
-          <Badge variant="outline" className="mx-2 my-2 rounded-full">
+        {skillsCountArray.map(skill=> 
+          <Badge variant="outline" className="mx-2 my-2 rounded-full hover:bg-slate-200 dark:hover:bg-sky-700">
             {skill[0]} {skill[1] > 1 && <span class="font-semibold ml-3 text-indigo-400">{skill[1]}</span>}
           </Badge>)}
       </div>
