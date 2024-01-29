@@ -21,7 +21,7 @@ Asosiasi ini memberikan kesempatan kepada alumni DLA untuk menjadi pemimpin digi
 
 APDI memiliki misi membangun sistem dan organisasi untuk mendukung pengembangan pemimpin digital. Selain itu, APDI pun akan mengembangkan platform untuk meningkatkan efisiensi dan efektivitas proses bisnis digital.
 
-
+![Pengurus APDI](/images/APDI-Pengurus.jpg)
 
 Untuk mengembangan ekonomi digital, APDI akan membangun kolaborasi dan sinergi dengan berbagai pemangku kepentingan. Tak lupa pula APDI akan berupaya menciptakan kemampuan transformasi dan inovasi digital yang berkelanjutan, berdaya saing, berwawasan lingkungan, dan bermanfaat bagi masyarakat.
 
