@@ -25,6 +25,7 @@ if (!category) {
 }
 
 const posts = await getPostsByCategory(category);
+// Send all posts to BlogHeader for search component
 ---
 
 <MainLayout title={`${capitalizer(category)} | Berita`} description={`Semua berita dalam kategori ${category}`}>

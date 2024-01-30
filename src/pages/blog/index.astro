@@ -7,6 +7,7 @@ import MainLayout from "@/layouts/main-layout.astro";
 import { getPosts } from "@/lib/fetchers";
 
 const posts = await getPosts();
+// Send all posts to BlogHeader for search component
 ---
 
 <MainLayout title="Berita">
