@@ -30,7 +30,7 @@ const posts = await getPostsByCategory(category);
 
 <MainLayout title={`${capitalizer(category)} | Berita`} description={`Semua berita dalam kategori ${category}`}>
   <section class="container py-10">
-    <BlogHeader title={`${capitalizer(category)}`} />
+    <BlogHeader title={`${capitalizer(category)}`} posts={posts} />
 
     <div
       class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-6 gap-y-9 md:gap-y-16 lg:gap-x-8"

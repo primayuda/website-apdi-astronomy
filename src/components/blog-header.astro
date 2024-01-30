@@ -6,15 +6,19 @@ import { getCategories } from "@/lib/fetchers";
 import { cn } from "@/lib/utils";
 import Icon from "astro-icon";
 import { Input } from "./ui/input";
+import type { CollectionEntry } from "astro:content";
+import Search from "./search";
 
 const categories = await getCategories();
 
 type Props = {
   title: string;
+  posts: CollectionEntry<'blog'>[]
 };
 
-const { title } = Astro.props;
+const { title, posts } = Astro.props;
 const { category } = Astro.params;
+// console.log(posts);
 ---
 
 <h1 class="inline-block font-heading text-4xl">{title}</h1>
@@ -26,23 +30,7 @@ const { category } = Astro.params;
     <Icon name="ri:search-line" class="size-5" />
     <Input className="text-sm ml-2 hidden lg:flex" placeholder="Search (coming soon)" type="text" />
   </span> -->
-  <div class="relative w-80">
-    <svg
-      xmlns="http://www.w3.org/2000/svg"
-      class="absolute top-0 bottom-0 w-6 h-6 my-auto text-gray-500 left-3"
-      fill="none"
-      viewBox="0 0 24 24"
-      stroke="currentColor"
-    >
-      <path
-        stroke-linecap="round"
-        stroke-linejoin="round"
-        stroke-width={2}
-        d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
-      />
-    </svg>
-    <Input type="search" placeholder="Search (coming soon)" className="pl-12 pr-4" />
-  </div>
+  <Search client:load searchList={posts} />
 
   {
     categories?.length ? (
