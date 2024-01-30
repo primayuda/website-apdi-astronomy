@@ -1,8 +1,11 @@
 ---
+export const prerender = true;
+
 import { buttonVariants } from "@/components/ui/button";
 import { getCategories } from "@/lib/fetchers";
 import { cn } from "@/lib/utils";
 import Icon from "astro-icon";
+import { Input } from "./ui/input";
 
 const categories = await getCategories();
 
@@ -19,10 +22,27 @@ const { category } = Astro.params;
 <div
   class="flex items-start justify-between my-6 max-md:gap-4"
 >
-  <span class="flex items-center lg:w-full max-w-xs h-10 rounded-md px-2 lg:px-3 border text-muted-foreground">
+  <!-- <span class="flex items-center lg:w-full max-w-xs h-10 rounded-md px-2 lg:px-3 border text-muted-foreground">
     <Icon name="ri:search-line" class="size-5" />
-    <span class="text-sm ml-2 hidden lg:flex">Search (coming soon)</span>
-  </span>
+    <Input className="text-sm ml-2 hidden lg:flex" placeholder="Search (coming soon)" type="text" />
+  </span> -->
+  <div class="relative w-80">
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      class="absolute top-0 bottom-0 w-6 h-6 my-auto text-gray-500 left-3"
+      fill="none"
+      viewBox="0 0 24 24"
+      stroke="currentColor"
+    >
+      <path
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width={2}
+        d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
+      />
+    </svg>
+    <Input type="search" placeholder="Search (coming soon)" className="pl-12 pr-4" />
+  </div>
 
   {
     categories?.length ? (
