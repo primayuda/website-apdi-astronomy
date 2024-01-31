@@ -5,11 +5,13 @@ import { Input } from './ui/input';
 // Configs fuse.js
 // https://fusejs.io/api/options.html
 const options = {
-	keys: ['data.title', 'data.description', 'slug', 'body'],
+	keys: ['data.title', 'data.description', 'body'],
 	includeMatches: true,
 	minMatchCharLength: 2,
 	threshold: 0.5,
 };
+
+// TODO : responsive design for handphone screen
 
 function Search({ searchList }) {
     // console.log(searchList);
@@ -30,7 +32,7 @@ function Search({ searchList }) {
 	}
 
 	return (
-		<>
+		<div className='grid grid-rows relative'>
 			<div className="relative w-80">
                 <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -46,23 +48,28 @@ function Search({ searchList }) {
                     d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
                 />
                 </svg>
-                <Input type="search" placeholder="Search (coming soon)" className="pl-12 pr-4"onChange={handleOnSearch} />
+                <Input type="search" placeholder="Cari berita" className="pl-12 pr-4"onChange={handleOnSearch} />
             </div>
-			{query.length > 1 && (
-				<p>
-					Found {posts.length} {posts.length === 1 ? 'result' : 'results'} for '{query}'
+			{query.length > 1 && 
+				<div className='absolute top-10 z-50 bg-gray-100 dark:bg-slate-800 rounded-xl p-2'>
+				<p className='my-2'>
+					Ditemukan {posts.length} berita terkait '{query}'
 				</p>
-			)}
-			<ul>
-				{posts &&
-					posts.map((post) => (
-						<li>
-							<a href={`/blog/${post.slug}`}>{post.data.title}</a>
-							{post.data.description}
-						</li>
-					))}
-			</ul>
-		</>
+			
+				<ul>
+					{posts &&
+						posts.map((post) => (
+							<li className='mb-2'>
+								<a href={`/blog/${post.slug}`} className='text-lg semibold hover:underline underline-offset-2 font-heading'>{post.data.title}</a>
+								<p className='line-clamp-1'>{post.data.description}</p>
+							</li>
+						))}
+				</ul>
+			</div>
+			}
+			
+			
+		</div>
 	);
 }
 
