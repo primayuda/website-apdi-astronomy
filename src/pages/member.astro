@@ -39,6 +39,7 @@ const skillsCountArray: [string, number][] = Object.entries(skillsCount);
 import ToTopButton from "@/components/ToTopButton";
 import { Badge } from "@/components/ui/badge"
 
+import SearchMember from '@/components/searchmember';
 ---
 
 <MainLayout
@@ -57,10 +58,11 @@ import { Badge } from "@/components/ui/badge"
         Silakan explorasi anggota APDI untuk koneksi professional.
         Jika butuh bantuan, silakan kontak sekretariat kami.
       </p>
-      <span class="flex items-center lg:w-full max-w-xs h-10 rounded-md px-2 lg:px-3 border text-muted-foreground mx-auto">
-        <Icon name="ri:search-line" class="size-5" />
-        <span class="text-sm ml-2 hidden lg:flex">Search (coming soon)</span>
-      </span>
+      <div class="container mx-auto">
+        <SearchMember client:load searchList={allMembers} />
+      </div>
+      
+
 <!-- Show all competence with the count. TODO: filter based on the selected competence --> 
       <h2 class="font-heading text-xl text-center">Kompetensi anggota APDI</h2>
       <div class="container gap-2">

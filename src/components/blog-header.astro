@@ -7,7 +7,7 @@ import { cn } from "@/lib/utils";
 import Icon from "astro-icon";
 import { Input } from "./ui/input";
 import type { CollectionEntry } from "astro:content";
-import Search from "./search";
+import SearchBlog from "./searchblog";
 
 const categories = await getCategories();
 
@@ -30,7 +30,7 @@ const { category } = Astro.params;
     <Icon name="ri:search-line" class="size-5" />
     <Input className="text-sm ml-2 hidden lg:flex" placeholder="Search (coming soon)" type="text" />
   </span> -->
-  <Search client:load searchList={posts} />
+  <SearchBlog client:load searchList={posts} />
 
   {
     categories?.length ? (
@@ -72,3 +72,4 @@ const { category } = Astro.params;
 </div>
 
 <hr class="mb-7" />
+./searchblog

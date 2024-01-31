@@ -11,9 +11,10 @@ const options = {
 	threshold: 0.6,
 };
 
+
 // TODO : responsive design for handphone screen
 
-function Search({ searchList }) {
+function SearchBlog({ searchList }) {
     // console.log(searchList);
 	// User's input
 	const [query, setQuery] = useState('');
