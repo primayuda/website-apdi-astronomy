@@ -74,5 +74,5 @@ function SearchBlog({ searchList }) {
 	);
 }
 
-export default Search;
+export default SearchBlog;
 
