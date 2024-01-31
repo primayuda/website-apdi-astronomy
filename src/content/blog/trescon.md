@@ -6,5 +6,5 @@ coverImage: '/images/APDI-Tresscon.png'
 category: 'event'
 ---
 
-Wakil Ketua APDI Ir. Arif Ilham Adnan ST, MBA. MSc. hadir sebagai pembicara dalam acara Cyber Tresscon atau World Cyber Security Summut yang diselenggarakan pada tanggal 14 - 15 Maret 2023 di hotel JW Marrriot Jakarta.
+Wakil Ketua APDI Ir. Arif Ilham Adnan ST, MBA. MSc. hadir sebagai pembicara dalam acara Cyber Tresscon atau World Cyber Security Summit yang diselenggarakan pada tanggal 14 - 15 Maret 2023 di hotel JW Marrriot Jakarta.
 

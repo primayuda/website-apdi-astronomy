@@ -8,7 +8,7 @@ const options = {
 	keys: ['data.title', 'data.description', 'body'],
 	includeMatches: true,
 	minMatchCharLength: 2,
-	threshold: 0.5,
+	threshold: 0.6,
 };
 
 // TODO : responsive design for handphone screen
