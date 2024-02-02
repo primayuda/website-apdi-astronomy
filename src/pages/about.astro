@@ -1,5 +1,6 @@
 ---
 import MainLayout from "@/layouts/main-layout.astro";
+import { resend } from '../lib/resend';
 
 import {
   Card,
@@ -24,6 +25,19 @@ if (Astro.request.method === "POST") {
     console.log(name);
     console.log(email);
     console.log(message);
+    try {
+    const data = await resend.emails.send({
+      from: 'Acme <onboarding@resend.dev>',
+      to: ['aprita.primayuda@gmail.com'],
+      subject: 'New feedback from website APDI mockup',
+      html: `<p>${name}</p><p>${email}</p><strong>${message}</strong>`
+    });
+
+    console.log(data);
+  } catch (error) {
+    console.error(error);
+  }
+
   } catch (error) {
     if (error instanceof Error) {
       console.error(error.message);
