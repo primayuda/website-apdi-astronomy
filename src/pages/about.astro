@@ -1,5 +1,4 @@
 ---
-
 import MainLayout from "@/layouts/main-layout.astro";
 import { resend } from '../lib/resend';
 
@@ -18,6 +17,9 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Alert, AlertDescription } from "@/components/ui/alert";
 
+
+
+let success = false;
 // TODO: validate email and create honeypot for bot
 if (Astro.request.method === "POST") {
   try {
@@ -37,10 +39,9 @@ if (Astro.request.method === "POST") {
       subject: 'New feedback from website APDI mockup',
       html: `<p>${name}</p><p>${email}</p><strong>${message}</strong>`
     });
-    // Display alert using success parameter
-    
+    // Display toast
+    success=true;
     console.log(data);
-    return Astro.redirect('/thanks')
   } catch (error) {
     console.error(error);
   }
@@ -58,12 +59,12 @@ if (Astro.request.method === "POST") {
   description="Latar belakang berdirinya APDI"
   mainClass="container py-10"
 >
-  <!-- {success && 
+  {success && 
     <Alert>
       <AlertDescription>Message received!!</AlertDescription>
-      <Button variant='outline' onClick={() => {success = false;}}>Close</Button>
+      <Button variant='outline' onClick={() => success = false}>Close</Button>
     </Alert>
-    } -->
+    }
   <section class="space-y-10 px-4">
     <h1 class="font-heading text-2xl sm:text-4xl">Latar Belakang Berdirinya Asosiasi Pemimpin Digital Indonesia (APDI)</h1>
     <img src="/images/Member-DLA.jpg" alt="alumni DLA 2021" class="mx-auto rounded-xl shadow-xl shadow-indigo-500/50" />
