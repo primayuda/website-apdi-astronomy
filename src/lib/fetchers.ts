@@ -12,7 +12,9 @@ export async function getCategories() {
 
 export async function getPosts() {
   const posts = (await getCollection("blog")).sort(
-    (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()
+    (a, b) => {
+      return new Date(b.data.pubDate) - new Date(a.data.pubDate);
+    }
   );
 
   return posts;
@@ -21,7 +23,7 @@ export async function getPosts() {
 export async function getPostsByCategory(category: string) {
   const posts = (await getCollection("blog"))
     .filter((post) => post.data.category === category)
-    .sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
+    .sort((a, b) => new Date(b.data.pubDate) - new Date(a.data.pubDate));
 
   return posts;
 }
