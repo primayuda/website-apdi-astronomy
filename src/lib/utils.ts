@@ -1,6 +1,6 @@
 import { type ClassValue, clsx } from "clsx";
 import { twMerge } from "tailwind-merge";
-import { format } from "date-fns";
+import { format } from "@formkit/tempo";
 
 export function cn(...inputs: ClassValue[]) {
   return twMerge(clsx(inputs));
@@ -10,8 +10,8 @@ export function wait(ms: number) {
   return new Promise((resolve) => setTimeout(resolve, ms));
 }
 
-export function formatDate(date: Date) {
-  return format(date, "LLL dd, y");
+export function formatDate(date: string) {
+  return format(date, "long", "id");
 }
 
 export function extractSegmentURL(path: string) {

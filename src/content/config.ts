@@ -1,4 +1,6 @@
 import { defineCollection, z } from "astro:content";
+import { format } from "@formkit/tempo"
+
 
 const blog = defineCollection({
   type: 'content',
@@ -12,11 +14,11 @@ const blog = defineCollection({
     pubDate: z
       .string()
       .or(z.date())
-      .transform((val) => new Date(val)),
+      .transform((val) => format(new Date(val), 'long', 'id')),
     updatedDate: z
       .string()
       .optional()
-      .transform((str) => (str ? new Date(str) : undefined)),
+      .transform((str) => (str ? format(new Date(str), 'long', 'id') : undefined)),
   }),
 });
 
