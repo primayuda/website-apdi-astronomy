@@ -8,7 +8,7 @@ category: 'publikasi'
 
 We want to invite you to submit your latest research article.
 
-![Indonesian Journal of E-Learning and Multimedia](/images/ijoem-box.png)
+<img src='/images/ijoem-box.png' alt='IJOEM journal' width=60% height=60% style='border-radius:10px'>
 
 Indonesian Journal of E-Learning and Multimedia
 ISSN 2830-2885
