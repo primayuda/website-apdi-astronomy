@@ -2,13 +2,13 @@
 title: 'Call for Paper IJOEM'
 description: 'Partisipasi jurnal ilmiah IJOEM'
 pubDate: 'Feb 24 2024'
-coverImage: '/images/Ijoem-logo.png'
+coverImage: '/images/ijoem-logo.png'
 category: 'publikasi'
 ---
 
 We want to invite you to submit your latest research article.
 
-![Indonesian Journal of E-Learning and Multimedia](/public/images/Ijoem-box.png)
+![Indonesian Journal of E-Learning and Multimedia](/images/ijoem-box.png)
 
 Indonesian Journal of E-Learning and Multimedia
 ISSN 2830-2885
@@ -20,7 +20,7 @@ https://ejournal.1001tutorial.com/index.php/ijoem/FocusandScope
 Register :
 https://ejournal.1001tutorial.com/index.php/ijoem/user/register
 
-![May Journal](public/images/paper-ijoem.png)
+![May Journal](/images/paper-ijoem.png)
 
 ✅ Volume 3, No. 2: May 2024
 
