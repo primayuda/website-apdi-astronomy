@@ -55,6 +55,7 @@ const { Content } = await member.render();
     </div>
   </section>
   <section class="my-4">
+    <p class="text-muted-foreground text-md mb-2">Kompetensi :</p>
     {member.data.skills.map((skill: string) => <Badge variant="outline" className='rounded-xl mx-2 my-1 px-4 italic'>{skill}</Badge>)}
   </section>
   <section>
