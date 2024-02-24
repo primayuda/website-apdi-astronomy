@@ -12,12 +12,10 @@ import {
 } from "@/components/ui/card"
 
 import { Eye, PenTool } from "lucide-react";
-import { Button } from "@/components/ui/button";
+import { Button, buttonVariants } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Alert, AlertDescription } from "@/components/ui/alert";
-
-
 
 let success = false;
 // TODO: validate email and create honeypot for bot
@@ -42,6 +40,7 @@ if (Astro.request.method === "POST") {
     // Display toast
     success=true;
     console.log(data);
+    // alert('form submitted');
   } catch (error) {
     console.error(error);
   }
@@ -61,8 +60,8 @@ if (Astro.request.method === "POST") {
 >
   {success && 
     <Alert>
-      <AlertDescription>Message received!!</AlertDescription>
-      <Button variant='outline' onClick={() => success = false}>Close</Button>
+      <AlertDescription className="mb-5">Pesan anda diterima!</AlertDescription>
+      <a href="/about" class={buttonVariants({ variant: "outline" })}>Tutup</a>
     </Alert>
     }
   <section class="space-y-10 px-4">
