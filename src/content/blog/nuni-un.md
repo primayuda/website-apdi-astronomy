@@ -76,7 +76,7 @@ Indonesia Digital Leadership Association (IDLA) at www.PemimpinDigital.id is a c
 
 For further information, please contact:
 
-Siska Widyawati 
+**Siska Widyawati** 
 
 National Information Officer 
 United Nations Information Center (UNIC)
@@ -85,7 +85,7 @@ United Nations Information Center (UNIC)
 
 siska.widyawati@un.org
 
-Hamzah Ramadhan
+**Hamzah Ramadhan**
 
 International Communication Section Head
 BINUS University 
@@ -95,6 +95,15 @@ BINUS University
 hamzah.ramadhan@binus.edu
 
 Source: https://indonesia.un.org/en/263419-united-nations-nationwide-universities-and-digital-leaders-join-forces-enhance-indonesias
+
+Related news:
+https://www.detik.com/edu/edutainment/d-7242954/pbb-jejaring-universitas-di-indonesia-jalin-kerja-sama-transformasi-digital
+https://www.antaranews.com/berita/4012017/kemitraan-pbb-dan-universitas-pemimpin-dukung-transformasi-digital
+https://www.detik.com/edu/edutainment/d-7243423/5-pilar-penting-dalam-transformasi-digital-indonesia-anak-muda-harus-tahu
+https://www.antaranews.com/berita/4012581/apdi-peningkatan-literasi-sdm-upaya-atasi-kemiskinan-digital
+https://www.antaranews.com/berita/4012257/kemenparb-ingin-aplikasi-pemerintah-jadi-masyarakat-sentris?utm_source=antaranews&utm_medium=desktop&utm_campaign=popular_right
+https://jogja.antaranews.com/berita/671832/literasi-sdm-upaya-atasi-kemiskinan-digital-di-indonesia-ini-kata-apdi
+
 
 
 
