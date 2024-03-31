@@ -60,7 +60,7 @@ It also aligns with the goals of the United Nations Secretary-General's Roadmap 
 
 This initiative supports several SDGs, including Quality Education, Gender Equality, Decent Work and Economic Growth, Industry, Innovation and Infrastructure, Reduced Inequalities, and Partnerships for the Goals. The ten UN agencies backing this initiative include FAO, IOM, ITC, ITU, UNDP, UNESCO, UNHABITAT, UNICEF, UNIDO, and WHO.
 
-END
+----
 
 **UN in Indonesia:** 
 
@@ -73,26 +73,6 @@ NUNI stands for Nationwide University Network in Indonesia (or in Bahasa: Jejari
 **APDI** 
 
 Indonesia Digital Leadership Association (IDLA) at www.PemimpinDigital.id is a community of Digital Leaders to accelerate the Digital Transformation through collaboration in the digital era.
-
-For further information, please contact:
-
-**Siska Widyawati** 
-
-National Information Officer 
-United Nations Information Center (UNIC)
-
-+628788-488-5489
-
-siska.widyawati@un.org
-
-**Hamzah Ramadhan**
-
-International Communication Section Head
-BINUS University 
-
-(+62)811-11611-93
-
-hamzah.ramadhan@binus.edu
 
 Source: https://indonesia.un.org/en/263419-united-nations-nationwide-universities-and-digital-leaders-join-forces-enhance-indonesias
 
