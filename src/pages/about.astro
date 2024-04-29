@@ -1,6 +1,5 @@
 ---
 import MainLayout from "@/layouts/main-layout.astro";
-import { resend } from '../lib/resend';
 
 import {
   Card,
@@ -17,30 +16,40 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Alert, AlertDescription } from "@/components/ui/alert";
 
+
 let success = false;
 // TODO: validate email and create honeypot for bot
 if (Astro.request.method === "POST") {
   try {
     const data = await Astro.request.formData();
-    const name = data.get("name");
-    const email = data.get("email");
-    const message = data.get("message");
-    // Do something with the data
-    console.log(name);
-    console.log(email);
-    console.log(message);
+    // const name = data.get("name");
+    // const email = data.get("email");
+    // const message = data.get("message");
+    // // Do something with the data
+    // console.log(name);
+    // console.log(email);
+    // console.log(message);
+    
     try {
-    const data = await resend.emails.send({
-      from: 'Acme <onboarding@resend.dev>',
-      // Testing email so not clogging the personal email, change in real production
-      to: ['delivered@resend.dev'],
-      subject: 'New feedback from website APDI mockup',
-      html: `<p>${name}</p><p>${email}</p><strong>${message}</strong>`
-    });
-    // Display toast
-    success=true;
-    console.log(data);
-    // alert('form submitted');
+      const object = Object.fromEntries(data);
+      const json = JSON.stringify(object);
+
+      let response = await fetch('https://api.web3forms.com/submit', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+                'Accept': 'application/json'
+            },
+            body: json
+        })
+      if (response.status === 200) {
+        // Display toast
+        success=true;
+        console.log(data);
+        // alert('form submitted');
+      }
+
+    
   } catch (error) {
     console.error(error);
   }
@@ -122,6 +131,7 @@ if (Astro.request.method === "POST") {
         <h2 class="text-lg mb-1 font-heading dark:text-white">Kontak Kami</h2>
         <p class="leading-relaxed mb-5 dark:text-white">Silakan berikan feedback atau pesan kepada kami</p>
         <form method="post">
+          <input type="hidden" name="access_key" value='525026d5-1d7b-475d-ad97-a2d5c5793608'>
           <div class="relative mb-4">
             <label for="name" class="leading-7 text-sm dark:text-white">Nama</label>
             <Input type="text" id="name" name="name" className="w-full rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 dark:text-white py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">

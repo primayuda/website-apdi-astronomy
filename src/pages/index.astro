@@ -14,6 +14,33 @@ import { ArrowUpCircle, GraduationCap } from "lucide-react";
 
 import ToTopButton from "@/components/ToTopButton.jsx";
 import Upcoming from "@/components/Upcoming.astro";
+
+let success = false;
+
+if (Astro.request.method === "POST") {
+  const data = await Astro.request.formData();
+      try {
+        const object = Object.fromEntries(data);
+        const json = JSON.stringify(object);
+
+        let response = await fetch('https://api.web3forms.com/submit', {
+              method: 'POST',
+              headers: {
+                  'Content-Type': 'application/json',
+                  'Accept': 'application/json'
+              },
+              body: json
+          })
+        if (response.status === 200) {
+          // Display thank you text
+          success=true;
+          console.log(data);
+        }
+      } catch (error) {
+        console.log(error)
+      };
+
+}
 ---
 
 <MainLayout title="APDI">
@@ -60,9 +87,13 @@ import Upcoming from "@/components/Upcoming.astro";
       </div>
     <!-- Guest Book -->
       <div class="mt-4 w-3/4">
-        <label for="guestbook" class="my-2 font-bold">Buku tamu</label>
-        <Input id="guestbook" name="guestbook" placeholder="Silakan ketik email anda" />
-        <Button className="mt-2" variant="outline">Kirim</Button>
+        <form method="POST">
+          <input type="hidden" name="access_key" value='525026d5-1d7b-475d-ad97-a2d5c5793608'>
+          <label for="guestbook" class="my-2 font-bold">Buku tamu</label>
+          <Input id="guestbook" name="guestbook" placeholder="Silakan ketik email anda" type="email" />
+          <Button className="mt-2" variant="outline">Kirim</Button>
+        </form>
+        {success && <p class="mt-2 font-medium">Terima kasih</p>}
       </div>
     </div>
   </div>
