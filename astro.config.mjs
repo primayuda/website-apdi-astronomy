@@ -10,7 +10,8 @@ import alpinejs from "@astrojs/alpinejs";
 // https://astro.build/config
 export default defineConfig({
   output: "server",
-  site: "https://website-apdi.vercel.app/",
+  site: "https://www.pemimpindigital.id",
+  trailingSlash: "never",
   integrations: [mdx({
     syntaxHighlight: 'shiki',
     shikiConfig: {
