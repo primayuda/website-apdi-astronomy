@@ -1,0 +1,15 @@
+{
+  "redirects": [
+    {
+      "source": "/(.*)",
+      "has": [
+        {
+          "type": "host",
+          "value": "website-apdi.vercel.app"
+        }
+      ],
+      "destination": "https://www.pemimpindigital.id/$1",
+      "permanent": true
+    }
+  ]
+}
