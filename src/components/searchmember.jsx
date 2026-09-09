@@ -61,7 +61,7 @@ function SearchMember({ searchList }) {
 					{posts &&
 						posts.map((post) => (
 							<li className='mb-2'>
-								<a href={`/members/${post.slug}`} className='text-lg semibold hover:underline underline-offset-2 font-heading'>{post.data.name}</a>
+								<a href={`/members/${post.id}`} className='text-lg semibold hover:underline underline-offset-2 font-heading'>{post.data.name}</a>
 								<p className='line-clamp-1'>{post.data.title}</p>
 							</li>
 						))}

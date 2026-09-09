@@ -61,7 +61,7 @@ function SearchBlog({ searchList }) {
 					{posts &&
 						posts.map((post) => (
 							<li className='mb-2'>
-								<a href={`/blog/${post.slug}`} className='text-lg semibold hover:underline underline-offset-2 font-heading'>{post.data.title}</a>
+								<a href={`/blog/${post.id}`} className='text-lg semibold hover:underline underline-offset-2 font-heading'>{post.data.title}</a>
 								<p className='line-clamp-1'>{post.data.description}</p>
 							</li>
 						))}

@@ -1,16 +1,15 @@
-import { defineCollection, z } from "astro:content";
-import { format } from "date-fns"
-
+import { defineCollection } from "astro:content";
+import { glob } from "astro/loaders";
+import { z } from "astro/zod";
+import { format } from "date-fns";
 
 const blog = defineCollection({
-  type: 'content',
-  // Type-check frontmatter using a schema
+  loader: glob({ pattern: "**/*.{md,mdx}", base: "./src/content/blog" }),
   schema: z.object({
     title: z.string(),
     description: z.string(),
     coverImage: z.string(),
     category: z.string(),
-    // Transform string to Date object
     pubDate: z
       .string()
       .or(z.date())
@@ -18,12 +17,14 @@ const blog = defineCollection({
     updatedDate: z
       .string()
       .optional()
-      .transform((str) => (str ? format(new Date(str), "dd MMM yyyy") : undefined)),
+      .transform((str) =>
+        str ? format(new Date(str), "dd MMM yyyy") : undefined
+      ),
   }),
 });
 
 const docs = defineCollection({
-  type: 'content',
+  loader: glob({ pattern: "**/*.{md,mdx}", base: "./src/content/docs" }),
   schema: z.object({
     title: z.string(),
     description: z.string(),
@@ -31,7 +32,7 @@ const docs = defineCollection({
 });
 
 const guides = defineCollection({
-  type: 'content',
+  loader: glob({ pattern: "**/*.{md,mdx}", base: "./src/content/guides" }),
   schema: z.object({
     title: z.string(),
     description: z.string(),
@@ -45,7 +46,7 @@ const guides = defineCollection({
 });
 
 const members = defineCollection({
-  type: 'content',
+  loader: glob({ pattern: "**/*.md", base: "./src/content/members" }),
   schema: z.object({
     name: z.string(),
     title: z.string(),
@@ -54,7 +55,7 @@ const members = defineCollection({
     photo: z.object({
       url: z.string(),
       thumbnail: z.string().optional(),
-      alt: z.string().default('photo of APDI member')
+      alt: z.string().default("photo of APDI member"),
     }),
     email: z.string().email(),
     linkedin: z.string().url(),
@@ -64,8 +65,7 @@ const members = defineCollection({
     dla: z.enum(["2021", "2022", "2023"]),
     stream: z.string(),
     skills: z.array(z.string()),
-  })
-})
+  }),
+});
 
-
-export const collections = { blog , docs, guides, members };
+export const collections = { blog, docs, guides, members };

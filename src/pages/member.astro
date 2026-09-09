@@ -4,7 +4,7 @@ export const prerender = true;
 import MainLayout from "@/layouts/main-layout.astro";
 import MemberCard from "@/components/cards/member-card.astro"
 import { getCollection } from "astro:content";
-import Icon from "astro-icon";
+import { Icon } from "astro-icon/components";
 
 const allMembers = await getCollection('members');
 // console.log(allMembers);
@@ -45,7 +45,7 @@ import SearchMember from '@/components/searchmember';
 <MainLayout
   title="Member"
   description="Association Members"
-  mainClass="min-h-screen container max-w-screen-xl py-10"
+  mainClass="min-h-screen container max-w-(--breakpoint-xl) py-10"
 >
 <!-- Adding scroll to top button - currently only on Index Page & Member Page -->
   <ToTopButton client:load />
@@ -75,7 +75,7 @@ import SearchMember from '@/components/searchmember';
     </div>
   </section>
   <!-- TODO: Provide title of Pengurus & Pengawas APDI -->
-  <section class="p-1 rounded-xl bg-gradient-to-r from-blue-700 via-blue-500 to-blue-400">
+  <section class="p-1 rounded-xl bg-linear-to-r from-blue-700 via-blue-500 to-blue-400">
     <div class="bg-slate-100 dark:bg-gray-800 dark:text-gray-100 p-2 rounded-xl">
       <div class="container flex flex-col items-center justify-center p-4 mx-auto sm:p-10">
         <p class="p-2 text-sm font-medium tracki text-center uppercase">Inisiator terbentuknya APDI</p>

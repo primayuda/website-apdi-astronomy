@@ -3,9 +3,10 @@ import react from "@astrojs/react";
 import sitemap from "@astrojs/sitemap";
 import tailwindcss from "@tailwindcss/vite";
 import { defineConfig } from "astro/config";
-import vercel from '@astrojs/vercel/serverless';
+import vercel from "@astrojs/vercel";
 
 import alpinejs from "@astrojs/alpinejs";
+import icon from "astro-icon";
 
 // https://astro.build/config
 export default defineConfig({
@@ -18,7 +19,7 @@ export default defineConfig({
       theme: 'github-dark-dimmed'
     },
     gfm: true
-  }), sitemap(), react(), alpinejs({ entrypoint: '/src/entrypoint' })],
+  }), sitemap(), react(), alpinejs({ entrypoint: '/src/entrypoint' }), icon()],
   vite: { plugins: [tailwindcss()] },
   adapter: vercel({
     analytics: true
