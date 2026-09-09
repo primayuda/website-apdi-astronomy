@@ -188,7 +188,7 @@
   }
 
   .callout > * {
-    @apply my-0 !important;
+    @apply my-0!;
   }
   
   .font-icon-callout {
