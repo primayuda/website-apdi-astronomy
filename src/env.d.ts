@@ -6,7 +6,7 @@ interface Window {
 
 interface ImportMetaEnv {
   readonly RESEND_API: string;
-  // more env variables...
+  readonly WEB3FORMS_ACCESS_KEY: string;
 }
 
 interface ImportMeta {
