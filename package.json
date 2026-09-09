@@ -61,5 +61,10 @@
   "allowScripts": {
     "esbuild@0.28.2": true,
     "fsevents@2.3.3": true
+  },
+  "overrides": {
+    "@vercel/routing-utils": {
+      "path-to-regexp": "6.3.0"
+    }
   }
 }
